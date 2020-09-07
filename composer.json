@@ -17,11 +17,11 @@
     "source": "https://github.com/logi-ce/fmup"
   },
   "require": {
-    "php": "^5.6 || ^7.0",
-    "ext-json": "^1.2",
-    "ext-pcre": "0.0.0.* || ^7.0",
-    "ext-mbstring": "0.0.0.* || ^7.0",
-    "ext-spl": "0.2.* || ^7.0",
+    "php": "^5.6 || ^7.4",
+    "ext-json": "^7.4",
+    "ext-pcre": "^7.4",
+    "ext-mbstring": "^7.4",
+    "ext-spl": "^7.4",
     "monolog/monolog": "^1.13",
     "phpmailer/phpmailer": "^5.2",
     "ralouphie/getallheaders": "^2.0"
