@@ -39,7 +39,7 @@ class Mail extends Abstraction
      * @throws \Exception
      * @throws \FMUP\Config\Exception
      * @throws \FMUP\Exception
-     * @throws \phpmailerException
+     * @throws \PHPMailer\PHPMailer\Exception
      */
     protected function sendMail($body)
     {

@@ -6,7 +6,7 @@ namespace FMUP;
  * @package FMUP
  * @todo implement a real mail manager system
  */
-class Mail extends \PHPMailer
+class Mail extends \PHPMailer\PHPMailer\PHPMailer
 {
     private $config;
 
