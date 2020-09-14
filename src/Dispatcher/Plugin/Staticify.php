@@ -141,7 +141,7 @@ class Staticify extends \FMUP\Dispatcher\Plugin
         if (strpos($path, self::PROTOCOL) !== false) {
             return $this->jsonTransform($path, $isJson);
         }
-        $trailingPath = ($path{0} !== '/') ? $this->getAssetPath() : '';
+        $trailingPath = ($path[0] !== '/') ? $this->getAssetPath() : '';
         $path = $this->getDomain() . $trailingPath . $path;
         $path = str_replace(
             self::PROTOCOL . $this->getSubDomain(),
@@ -165,7 +165,7 @@ class Staticify extends \FMUP\Dispatcher\Plugin
             $request = $this->getRequest();
             /** @var $request \FMUP\Request\Http */
             $uri = $request->getServer(\FMUP\Request\Http::REQUEST_URI);
-            $this->trailingPath = ($uri{strlen($uri) - 1} == '/' ? dirname($uri . 'random') : dirname($uri)) . '/';
+            $this->trailingPath = ($uri[strlen($uri) - 1] == '/' ? dirname($uri . 'random') : dirname($uri)) . '/';
         }
         return $this->trailingPath;
     }
