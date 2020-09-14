@@ -10,7 +10,6 @@ class SapiMockChannelError extends \FMUP\Sapi
 {
     public function __construct()
     {
-
     }
 }
 
@@ -18,7 +17,6 @@ class EnvironmentMockChannelError extends \FMUP\Environment
 {
     public function __construct()
     {
-
     }
 }
 
@@ -26,7 +24,6 @@ class ProjectVersionMockChannelError extends \FMUP\ProjectVersion
 {
     public function __construct()
     {
-
     }
 }
 

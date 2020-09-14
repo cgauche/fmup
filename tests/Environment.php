@@ -6,7 +6,6 @@
 
 namespace FMUPTests;
 
-
 class Environment extends \PHPUnit_Framework_TestCase
 {
     /**

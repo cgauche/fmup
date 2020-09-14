@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Request;
 
-
 class UrlTest extends \PHPUnit_Framework_TestCase
 {
     public function testHasSetGetParam()
@@ -72,4 +71,3 @@ class UrlTest extends \PHPUnit_Framework_TestCase
         $this->assertSame('/path/to/file?v[0]=1&v[1]=2', (string)$url);
     }
 }
-

@@ -60,8 +60,7 @@ class StaticifyTest extends \PHPUnit_Framework_TestCase
                 array($this->equalTo(\FMUP\Request\Http::HTTP_HOST))
             )->willReturnOnConsecutiveCalls('https', 'www.localhost.com', 'https', 'www.localhost.com');
         $staticify = $this->getMockBuilder(\FMUP\Dispatcher\Plugin\Staticify::class)
-            ->setMethods(array('getRequest')
-            )->getMock();
+            ->setMethods(array('getRequest'))->getMock();
         $staticify->method('getRequest')->willReturn($request);
         /** @var $staticify \FMUP\Dispatcher\Plugin\Staticify */
         $this->assertSame('https://www.localhost.com', $staticify->getDomain());
@@ -92,7 +91,7 @@ class StaticifyTest extends \PHPUnit_Framework_TestCase
         <script src="/scripts/lib/jquery-1.9.1-min.js?10.4.3" type="text/javascript"></script>
         <script src="/modules/order/cart/styles/cart.js?10.4.3" type="text/javascript"></script>
 BODY
-);
+        );
         $bodyResponse = <<<BODY_RESPONSE
         <link href="https://static2.testdomain.tld/modules/order/cart/styles/cart.css?10.4.3" type="text/css" rel="stylesheet" />
         <a href="http://this.will.not.be.touched">a</a>

@@ -10,7 +10,6 @@ class PdoMockDbDriverPdoSqlSrv extends \PDO
 {
     public function __construct()
     {
-
     }
 }
 

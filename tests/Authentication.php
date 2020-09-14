@@ -10,7 +10,6 @@ class AuthenticationMock extends \FMUP\Authentication
 {
     public function __construct()
     {
-
     }
 }
 

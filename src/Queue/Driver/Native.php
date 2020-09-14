@@ -242,7 +242,7 @@ class Native implements DriverInterface, Environment\OptionalInterface
         $length = strlen($string);
         $return = 0;
         for ($i = 0; $i < $length; $i++) {
-            $return += ord($string{$i});
+            $return += ord($string[$i]);
         }
         return (int)($length . '0' . $return);
     }

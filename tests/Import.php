@@ -6,7 +6,6 @@
 
 namespace FMUPTests;
 
-
 class ImportTest extends \PHPUnit_Framework_TestCase
 {
     public function testConstructAndParse()

@@ -10,7 +10,6 @@ class SessionMockBootstrap extends \FMUP\Session
 {
     public function __construct()
     {
-
     }
 }
 
@@ -18,7 +17,6 @@ class FlashMessengerMockBootstrap extends \FMUP\FlashMessenger
 {
     public function __construct()
     {
-
     }
 }
 
@@ -26,7 +24,6 @@ class CookieMockBootstrap extends \FMUP\Cookie
 {
     public function __construct()
     {
-
     }
 }
 
@@ -34,7 +31,6 @@ class EnvironmentMockBootstrap extends \FMUP\Environment
 {
     public function __construct()
     {
-
     }
 }
 

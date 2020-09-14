@@ -38,7 +38,6 @@ class FtpFactoryMockFtp extends Ftp\Factory
 {
     public function __construct()
     {
-
     }
 }
 

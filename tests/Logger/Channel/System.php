@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Logger\Channel;
 
-
 class SystemTest extends \PHPUnit_Framework_TestCase
 {
     public function testConfigure()

@@ -60,6 +60,4 @@ class DateSQLTest extends \PHPUnit_Framework_TestCase
         $this->assertSame('2012-11-10', $function->invoke($formatterDate, '10/11/2012'));
         $this->assertSame('2010-11-12', $function->invoke($formatterDate, '2010-11-12'));
     }
-
-
 }

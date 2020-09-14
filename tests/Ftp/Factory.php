@@ -7,7 +7,6 @@ class FactoryMockFtpFactory extends Ftp\Factory
 {
     public function __construct()
     {
-
     }
 
     protected function getClassNameForDriver($driver)

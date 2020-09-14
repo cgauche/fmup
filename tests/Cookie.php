@@ -8,7 +8,6 @@ class CookieMock extends Cookie
 {
     public function __construct()
     {
-
     }
 
     protected function setCookie(
@@ -20,7 +19,6 @@ class CookieMock extends Cookie
         $secure = false,
         $httpOnly = false
     ) {
-
     }
 }
 

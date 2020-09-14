@@ -12,7 +12,6 @@ class SessionMock extends Session
 {
     public function __construct()
     {
-
     }
 }
 
@@ -20,7 +19,6 @@ class SapiMockSession extends \FMUP\Sapi
 {
     public function __construct()
     {
-
     }
 }
 

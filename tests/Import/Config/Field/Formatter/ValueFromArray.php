@@ -1,7 +1,6 @@
 <?php
 namespace FMUPTests\Import\Config\Field\Formatter;
 
-
 class ValueFromArrayTest extends \PHPUnit_Framework_TestCase
 {
     public function testFormatErrorWhenNoArrayDefined()

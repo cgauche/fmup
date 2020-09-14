@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Import\Iterator;
 
-
 class CsvToConfigIteratorTest extends \PHPUnit_Framework_TestCase
 {
     public function testConstruct()

@@ -10,7 +10,6 @@ class ManagerMockDb extends \FMUP\Db\Manager
 {
     public function __construct()
     {
-
     }
 }
 

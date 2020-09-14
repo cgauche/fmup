@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Response\Header;
 
-
 class ExpiresTest extends \PHPUnit_Framework_TestCase
 {
     public function testConstruct()

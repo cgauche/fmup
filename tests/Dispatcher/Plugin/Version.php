@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Dispatcher\Plugin;
 
-
 class VersionTest extends \PHPUnit_Framework_TestCase
 {
     public function testSetGetVersion()

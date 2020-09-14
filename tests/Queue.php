@@ -141,7 +141,7 @@ class QueueTest extends \PHPUnit_Framework_TestCase
         $mockDriver->method('pull')->will($this->onConsecutiveCalls(1, -2, '12', ''));
         /** @var $mockDriver \FMUP\Queue\DriverInterface */
         $queue->setDriver($mockDriver);
-        while ($array[] = $queue->pull()) ;
+        while ($array[] = $queue->pull());
         foreach ($array as $key => $msgReceived) {
             $this->assertSame($values[$key], $msgReceived);
         }
@@ -192,5 +192,4 @@ class QueueTest extends \PHPUnit_Framework_TestCase
     {
         return $this->getMockBuilder(\FMUP\Queue\DriverInterface::class)->getMock();
     }
-
 }

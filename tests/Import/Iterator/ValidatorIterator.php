@@ -15,7 +15,8 @@ class ValidatorIteratorTest extends \PHPUnit_Framework_TestCase
         $iterator = new \FMUP\Import\Iterator\ValidatorIterator(new \ArrayIterator(array('here')));
         $this->expectException(\FMUP\Import\Exception::class);
         $this->expectExceptionMessage('Iterator can only validate Config');
-        foreach ($iterator as $current);
+        foreach ($iterator as $current) {
+        }
     }
 
     public function testIterator()
@@ -26,13 +27,27 @@ class ValidatorIteratorTest extends \PHPUnit_Framework_TestCase
             ->getMock();
         $configObject->method('getStatut')
             ->willReturnOnConsecutiveCalls(
-                ConfigObjet::INSERT, ConfigObjet::UPDATE, '', //result update
-                ConfigObjet::INSERT, ConfigObjet::UPDATE, '', //result update
-                ConfigObjet::INSERT, ConfigObjet::UPDATE, '', //result update
-                ConfigObjet::INSERT, ConfigObjet::UPDATE, '', //result update
-                ConfigObjet::INSERT, '', ConfigObjet::INSERT, //result insert
-                '', ConfigObjet::INSERT, ConfigObjet::UPDATE, //result update
-                '', '', '' //result ''
+                ConfigObjet::INSERT,
+                ConfigObjet::UPDATE,
+                '', //result update
+                ConfigObjet::INSERT,
+                ConfigObjet::UPDATE,
+                '', //result update
+                ConfigObjet::INSERT,
+                ConfigObjet::UPDATE,
+                '', //result update
+                ConfigObjet::INSERT,
+                ConfigObjet::UPDATE,
+                '', //result update
+                ConfigObjet::INSERT,
+                '',
+                ConfigObjet::INSERT, //result insert
+                '',
+                ConfigObjet::INSERT,
+                ConfigObjet::UPDATE, //result update
+                '',
+                '',
+                '' //result ''
             );
         $config = $this->getMockBuilder(\FMUP\Import\Config::class)
             ->setMethods(array('validateLine', 'getListeConfigObjet', 'getDoublonLigne'))

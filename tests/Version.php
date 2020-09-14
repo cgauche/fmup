@@ -10,7 +10,6 @@ class VersionMock extends \FMUP\Version
 {
     public function __construct()
     {
-
     }
 }
 

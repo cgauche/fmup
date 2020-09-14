@@ -27,7 +27,7 @@ abstract class Model
     }
 
     /* **********
-    * Créateur	*
+    * Créateur  *
     ********** */
     /**
      * Crée une instance de classe avec les paramètres transmis
@@ -397,8 +397,7 @@ abstract class Model
         $attribute,
         $where = array(),
         $options = array()
-    )
-    {
+    ) {
         $SQL = "SELECT $attribute \n";
         $SQL .= " FROM $table  \n LEFT JOIN $left_table  \n";
         $SQL .= " ON $link_table  \n";

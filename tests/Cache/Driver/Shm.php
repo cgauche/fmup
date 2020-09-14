@@ -2,6 +2,7 @@
 namespace FMUPTests\Cache\Driver;
 
 use FMUP\Cache\Driver;
+
 /**
  * Created by PhpStorm.
  * User: jmoulin

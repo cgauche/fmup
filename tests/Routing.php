@@ -6,7 +6,6 @@
 
 namespace FMUPTests;
 
-
 class RoutingTest extends \PHPUnit_Framework_TestCase
 {
     public function testConstruct()

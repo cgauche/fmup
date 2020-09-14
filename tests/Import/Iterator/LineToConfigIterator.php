@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Import\Iterator;
 
-
 class LineToConfigIteratorTest extends \PHPUnit_Framework_TestCase
 {
     public function testSetGetConfig()

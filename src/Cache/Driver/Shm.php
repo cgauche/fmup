@@ -81,7 +81,7 @@ class Shm implements CacheInterface
         $length = strlen($string);
         $return = 0;
         for ($i = 0; $i < $length; $i++) {
-            $return += ord($string{$i});
+            $return += ord($string[$i]);
         }
         return (int)$length . '1' . $return;
     }

@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Exception\Status;
 
-
 class ForbiddenTest extends \PHPUnit_Framework_TestCase
 {
     public function testGetStatus()

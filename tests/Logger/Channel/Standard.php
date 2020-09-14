@@ -10,7 +10,6 @@ class SapiMockChannelStandard extends \FMUP\Sapi
 {
     public function __construct()
     {
-
     }
 }
 
@@ -18,7 +17,6 @@ class EnvironmentMockChannelStandard extends \FMUP\Environment
 {
     public function __construct()
     {
-
     }
 }
 

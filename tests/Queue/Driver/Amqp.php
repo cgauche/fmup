@@ -12,7 +12,6 @@ class AMQPChannelMockQueueDriverAmqp extends \PhpAmqpLib\Channel\AMQPChannel
 {
     public function __construct()
     {
-
     }
 }
 
@@ -20,7 +19,6 @@ class AMQPStreamConnectionMockQueueDriverAmqp extends \PhpAmqpLib\Connection\AMQ
 {
     public function __construct()
     {
-
     }
 }
 
@@ -28,7 +26,6 @@ class EnvironmentMockQueueDriverAmqp extends \FMUP\Environment
 {
     public function __construct()
     {
-
     }
 }
 

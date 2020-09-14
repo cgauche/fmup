@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Response\Header;
 
-
 class StatusTest extends \PHPUnit_Framework_TestCase
 {
     public function testConstruct()

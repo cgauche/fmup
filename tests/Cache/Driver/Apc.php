@@ -234,7 +234,10 @@ class ApcTest extends \PHPUnit_Framework_TestCase
         $cache = $this->getMockBuilder(Driver\Apc::class)->setMethods(array('isAvailable', 'apcFetch'))->getMock();
         $cache->method('isAvailable')->willReturn(true);
         $cache->method('apcFetch')
-            ->will($this->returnCallback(function ($key, &$success) { $success = $key && false; return false;}));
+            ->will($this->returnCallback(function ($key, &$success) {
+                $success = $key && false;
+                return false;
+            }));
         $key = 'unitTest';
         $this->expectException(\FMUP\Cache\Exception::class);
         $this->expectExceptionMessage('Unable to get ' . $key . ' from APC');
@@ -246,7 +249,10 @@ class ApcTest extends \PHPUnit_Framework_TestCase
     {
         $cache = $this->getMockBuilder(Driver\Apc::class)->setMethods(array('isAvailable', 'apcFetch'))->getMock();
         $cache->method('isAvailable')->willReturn(true);
-        $cache->method('apcFetch')->will($this->returnCallback(function ($key, &$success) { $success = true; return $key;}));
+        $cache->method('apcFetch')->will($this->returnCallback(function ($key, &$success) {
+            $success = true;
+            return $key;
+        }));
         $key = 'unitTest';
         /** @var Driver\Apc $cache */
         $this->assertSame($key, $cache->get($key));

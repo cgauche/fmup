@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Queue\Channel;
 
-
 class SettingsTest extends \PHPUnit_Framework_TestCase
 {
     public function testDefineByArrayFail()

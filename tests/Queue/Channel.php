@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Queue;
 
-
 class ChannelTest extends \PHPUnit_Framework_TestCase
 {
     public function testSetGetSettings()

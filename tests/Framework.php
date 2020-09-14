@@ -14,7 +14,6 @@ class SapiMockFramework extends \FMUP\Sapi
 {
     public function __construct()
     {
-
     }
 }
 
@@ -255,10 +254,10 @@ class FrameworkTest extends \PHPUnit_Framework_TestCase
          * @var $bootstrap \FMUP\Bootstrap
          */
         $this->expectOutputString("<br/>Une erreur est survenue !<br/>"
-. "Le support informatique a été prévenu "
-. "et règlera le problême dans les plus brefs délais.<br/>"
-. "<br/>"
-. "L'équipe des développeurs vous prie de l'excuser pour le désagrément.<br/>");
+        . "Le support informatique a été prévenu "
+        . "et règlera le problême dans les plus brefs délais.<br/>"
+        . "<br/>"
+        . "L'équipe des développeurs vous prie de l'excuser pour le désagrément.<br/>");
         $framework->shutDown();
     }
 

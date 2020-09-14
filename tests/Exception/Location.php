@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Exception;
 
-
 class LocationTest extends \PHPUnit_Framework_TestCase
 {
     public function testGetLocation()

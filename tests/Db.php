@@ -10,7 +10,6 @@ class DbFactoryMockDb extends \FMUP\Db\Factory
 {
     public function __construct()
     {
-
     }
 }
 
@@ -94,7 +93,8 @@ class DbTest extends \PHPUnit_Framework_TestCase
         /** @var $db \FMUP\Db */
         $oIterator = $db->getIterator($sql);
         $this->assertInstanceOf(\FMUP\Db\FetchIterator::class, $oIterator);
-        foreach($oIterator as $oElem);
+        foreach ($oIterator as $oElem) {
+        }
     }
 
     public function testForceReconnect()

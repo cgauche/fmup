@@ -12,7 +12,6 @@ class Bidibidi extends \FMUP\Logger\Channel
     {
         // TODO: Implement configure() method.
     }
-
 }
 
 namespace FMUP\Logger;

@@ -13,7 +13,6 @@ class PdoMockDbDriverPdoConfiguration extends \PDO
 {
     public function __construct()
     {
-
     }
 }
 

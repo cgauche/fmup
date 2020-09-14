@@ -6,7 +6,6 @@
 
 namespace Tests\Response\Header;
 
-
 class AccessControlAllowOriginTest extends \PHPUnit_Framework_TestCase
 {
     public function testConstruct()

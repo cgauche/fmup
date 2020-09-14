@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Import\Iterator;
 
-
 class LineFilterIteratorTest extends \PHPUnit_Framework_TestCase
 {
     public function testFilter()

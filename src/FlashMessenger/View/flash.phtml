@@ -1,11 +1,11 @@
 <?php $flashes = \FMUP\FlashMessenger::getInstance()->get(); ?>
-<?php if ($flashes !== null): ?>
+<?php if ($flashes !== null) : ?>
     <?php
-        foreach ($flashes as $flash):
-            /* @var $flash \FMUP\FlashMessenger\Message */
-    ?>
+    foreach ($flashes as $flash) :
+        /* @var $flash \FMUP\FlashMessenger\Message */
+        ?>
         <div class="alert alert-<?php echo $flash->getType(); ?>">
-            <?php echo $flash->getMessage(); ?>
+        <?php echo $flash->getMessage(); ?>
         </div>
     <?php endforeach; ?>
 <?php endif; ?>

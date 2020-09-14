@@ -10,7 +10,6 @@ class EnvironmentMockQueueDriverNative extends \FMUP\Environment
 {
     public function __construct()
     {
-
     }
 }
 

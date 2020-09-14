@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Exception\Status;
 
-
 class UnauthorizedTest extends \PHPUnit_Framework_TestCase
 {
     public function testGetStatus()

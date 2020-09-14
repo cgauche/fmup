@@ -32,7 +32,7 @@ ksort($retour);
     <?php
     unset($retour[0]);
     foreach ($retour as $trace) :
-    ?>
+        ?>
         <tr>
             <td><?php echo ((isset($trace['file'])) ? $trace['file'] : $exception->getFile()) ?></td>
             <td style="text-align: right;"><?php echo ((isset($trace['line'])) ? $trace['line'] : $exception->getLine()) ?></td>

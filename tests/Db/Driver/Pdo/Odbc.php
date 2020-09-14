@@ -10,7 +10,6 @@ class PdoMockDbDriverPdoOdbc extends \PDO
 {
     public function __construct()
     {
-
     }
 }
 

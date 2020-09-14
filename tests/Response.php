@@ -19,7 +19,6 @@ class ResponseSapiMock extends \FMUP\Sapi
 {
     public function __construct()
     {
-
     }
 }
 
@@ -144,13 +143,19 @@ class ResponseTest extends \PHPUnit_Framework_TestCase
             ->willReturn($contentLength);
 
         $header1 = $this->getMockBuilder(ResponseHeaderMockResponse::class)->setMethods(array('render', 'getType'))->getMock();
-        $header1->method('render')->will($this->returnCallback(function () { echo 'header1';}));
+        $header1->method('render')->will($this->returnCallback(function () {
+            echo 'header1';
+        }));
         $header1->method('getType')->willReturn('type1');
         $header2 = $this->getMockBuilder(ResponseHeaderMockResponse::class)->setMethods(array('render', 'getType'))->getMock();
-        $header2->method('render')->will($this->returnCallback(function () { echo 'header2';}));
+        $header2->method('render')->will($this->returnCallback(function () {
+            echo 'header2';
+        }));
         $header2->method('getType')->willReturn('type2');
         $header3 = $this->getMockBuilder(ResponseHeaderMockResponse::class)->setMethods(array('render', 'getType'))->getMock();
-        $header3->method('render')->will($this->returnCallback(function () { echo 'header3';}));
+        $header3->method('render')->will($this->returnCallback(function () {
+            echo 'header3';
+        }));
         $header3->method('getType')->willReturn('type1');
 
         /**
@@ -170,13 +175,19 @@ class ResponseTest extends \PHPUnit_Framework_TestCase
         $response->method('getSapi')->willReturn($sapi);
 
         $header1 = $this->getMockBuilder(ResponseHeaderMockResponse::class)->setMethods(array('render', 'getType'))->getMock();
-        $header1->method('render')->will($this->returnCallback(function () { echo 'header1';}));
+        $header1->method('render')->will($this->returnCallback(function () {
+            echo 'header1';
+        }));
         $header1->method('getType')->willReturn('type1');
         $header2 = $this->getMockBuilder(ResponseHeaderMockResponse::class)->setMethods(array('render', 'getType'))->getMock();
-        $header2->method('render')->will($this->returnCallback(function () { echo 'header2';}));
+        $header2->method('render')->will($this->returnCallback(function () {
+            echo 'header2';
+        }));
         $header2->method('getType')->willReturn('type2');
         $header3 = $this->getMockBuilder(ResponseHeaderMockResponse::class)->setMethods(array('render', 'getType'))->getMock();
-        $header3->method('render')->will($this->returnCallback(function () { echo 'header3';}));
+        $header3->method('render')->will($this->returnCallback(function () {
+            echo 'header3';
+        }));
         $header3->method('getType')->willReturn('type1');
 
         /**

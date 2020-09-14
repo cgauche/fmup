@@ -5,9 +5,7 @@
 
 namespace Tests\Ftp\Driver;
 
-
 use FMUP\Ftp;
-
 
 class FtpImplicitSSLTest extends \PHPUnit_Framework_TestCase
 {

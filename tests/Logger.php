@@ -9,7 +9,6 @@ class FactoryMockLogger extends \FMUP\Logger\Factory
 {
     public function __construct()
     {
-
     }
 }
 

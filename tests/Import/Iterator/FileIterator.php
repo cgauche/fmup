@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Import\Iterator;
 
-
 class FileIteratorTest extends \PHPUnit_Framework_TestCase
 {
     public function testFailWhenFileDontExists()

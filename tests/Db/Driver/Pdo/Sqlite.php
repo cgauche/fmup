@@ -10,7 +10,6 @@ class PdoMockDbDriverPdoSqlite extends \PDO
 {
     public function __construct()
     {
-
     }
 }
 

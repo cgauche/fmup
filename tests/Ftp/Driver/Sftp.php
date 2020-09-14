@@ -170,7 +170,8 @@ class SftpTest extends \PHPUnit_Framework_TestCase
                 $this->equalTo('host'),
                 $this->equalTo(222),
                 $this->equalTo(array('key' => 'val')),
-                $this->equalTo(null));
+                $this->equalTo(null)
+            );
         $sftp3->expects($this->once())
             ->method('ssh2Connect')
             ->willReturn(fopen('php://stdin', 'r'))

@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Import\Config\Field\Validator;
 
-
 class EnumTest extends \PHPUnit_Framework_TestCase
 {
     public function testSetGetValues()

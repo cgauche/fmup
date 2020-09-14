@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Controller;
 
-
 class ErrorTest extends \PHPUnit_Framework_TestCase
 {
     public function testSetGetException()

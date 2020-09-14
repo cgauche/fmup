@@ -10,7 +10,6 @@ class SapiMock extends \FMUP\Sapi
 {
     public function __construct()
     {
-
     }
 }
 

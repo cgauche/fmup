@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Response\Header;
 
-
 class ContentLengthTest extends \PHPUnit_Framework_TestCase
 {
     public function testConstruct()

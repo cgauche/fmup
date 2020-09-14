@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Import\Config\Field\Formatter;
 
-
 class IdFromFieldTest extends \PHPUnit_Framework_TestCase
 {
     public function testFormatterErrorWhenNotExists()

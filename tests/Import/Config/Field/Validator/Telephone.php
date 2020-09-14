@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Import\Config\Field\Validator;
 
-
 class TelephoneTest extends \PHPUnit_Framework_TestCase
 {
 

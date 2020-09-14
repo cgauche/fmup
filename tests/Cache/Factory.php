@@ -1,7 +1,8 @@
 <?php
 namespace FMUP\Cache\Driver;
 
-class Mock {
+class Mock
+{
 
 }
 

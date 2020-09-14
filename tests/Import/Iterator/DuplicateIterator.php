@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Import\Iterator;
 
-
 class DuplicateIteratorTest extends \PHPUnit_Framework_TestCase
 {
     public function testIteratorFail()
@@ -14,7 +13,8 @@ class DuplicateIteratorTest extends \PHPUnit_Framework_TestCase
         $iterator = new \FMUP\Import\Iterator\DuplicateIterator(new \ArrayIterator(array('here')));
         $this->expectException(\FMUP\Import\Exception::class);
         $this->expectExceptionMessage('Current object is not config');
-        foreach ($iterator as $current);
+        foreach ($iterator as $current) {
+        }
     }
 
     public function testIterator()

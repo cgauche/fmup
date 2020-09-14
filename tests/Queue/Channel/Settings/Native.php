@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Queue\Channel\Settings;
 
-
 class NativeTest extends \PHPUnit_Framework_TestCase
 {
     public function testDefineByArrayFail()

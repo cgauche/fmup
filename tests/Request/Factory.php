@@ -5,7 +5,6 @@ class SapiMockFactory extends \FMUP\Sapi
 {
     public function __construct()
     {
-
     }
 }
 class FactoryTest extends \PHPUnit_Framework_TestCase

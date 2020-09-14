@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Response\Header;
 
-
 class ContentTransferEncodingTest extends \PHPUnit_Framework_TestCase
 {
     public function testContruct()

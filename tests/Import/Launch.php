@@ -6,7 +6,6 @@
 
 namespace FMUPTests\Import;
 
-
 class LaunchTest extends \PHPUnit_Framework_TestCase
 {
     public function testParseFailWhenErrorOccurs()

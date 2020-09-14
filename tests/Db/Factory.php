@@ -10,7 +10,6 @@ class FactoryMockDbFactory extends \FMUP\Db\Factory
 {
     public function __construct()
     {
-
     }
 
     protected function getClassNameForDriver($driver)
